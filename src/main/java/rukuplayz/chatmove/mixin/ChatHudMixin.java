@@ -27,9 +27,8 @@ abstract public class ChatHudMixin extends DrawableHelper implements WindowEvent
         int i = 320;
         return (PosOption * 600);
     }
-    @Inject(method="render", at=@At(value="INVOKE",
-    target = "Lnet/minecraft/client/util/math/MatrixStack;translate(FFF)V", ordinal = 1))
-    public void TranslateAgain(MatrixStack matrices, int currentTick, int mouseX, int mouseY, CallbackInfo ci){
+    @Inject(method="render", at=@At(value="HEAD"))
+    public void TranslateAgain(MatrixStack matrices, int currentTick, CallbackInfo ci){
         matrices.translate(getPosD(getChatPosX().getValue()), -1 * getPosD(getChatPosY().getValue()), 0.0f);
     }
     /*

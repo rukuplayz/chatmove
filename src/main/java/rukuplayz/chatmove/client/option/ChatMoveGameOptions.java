@@ -13,8 +13,8 @@ public class ChatMoveGameOptions {
     }
 
 
-    private final static SimpleOption<Double> chatPosX = new SimpleOption<Double>("options.chat.pos.x", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, getPos(value)), SimpleOption.DoubleSliderCallbacks.INSTANCE, 0.0, value -> MinecraftClient.getInstance().inGameHud.getChatHud().reset());
-    private final static SimpleOption<Double> chatPosY = new SimpleOption<Double>("options.chat.pos.y", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, getPos(value)), SimpleOption.DoubleSliderCallbacks.INSTANCE, 0.0, value -> MinecraftClient.getInstance().inGameHud.getChatHud().reset());
+    private final static SimpleOption<Double> chatPosX = new SimpleOption<Double>("chatmove.options.chat.pos.x", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, getPos(value)), SimpleOption.DoubleSliderCallbacks.INSTANCE, 0.0, value -> MinecraftClient.getInstance().inGameHud.getChatHud().reset());
+    private final static SimpleOption<Double> chatPosY = new SimpleOption<Double>("chatmove.options.chat.pos.y", SimpleOption.emptyTooltip(), (optionText, value) -> GameOptions.getGenericValueText(optionText, getPos(value)), SimpleOption.DoubleSliderCallbacks.INSTANCE, 0.0, value -> MinecraftClient.getInstance().inGameHud.getChatHud().reset());
 
     public static SimpleOption<Double> getChatPosX() {
         return chatPosX;
