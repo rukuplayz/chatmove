@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "chatmove",
+  "version": "${version}",
+  "name": "Chatmove",
+  "description": "",
+  "authors": [
+    "rukuplayz"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/chatmove/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "rukuplayz.chatmove.client.ChatmoveClient"
+    ],
+    "main": [
+      "rukuplayz.chatmove.Chatmove"
+    ]
+  },
+  "mixins": [
+    "chatmove.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
