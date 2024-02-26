@@ -4,7 +4,8 @@
   "package": "rukuplayz.chatmove.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ChatOptionScreenMixin"
+    "ChatOptionScreenMixin",
+    "GameOptionsMixin"
   ],
   "client": [
     "ChatHudMixin"
